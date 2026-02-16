@@ -7,9 +7,7 @@ const app = express();
 const PORT = process.env.PORT ; // Puerto 4000 para no chocar con Next.js
 
 // Middlewares
-app.use(cors({
-  origin: ['http://localhost:3000', 'https://casa-mango.vercel.app']
-}));      // Permite que el cliente (Next.js) nos hable
+app.use(cors());      // Permite que el cliente (Next.js) nos hable
 app.use(express.json()); // Nos permite recibir datos JSON
 
 // Ruta de prueba
