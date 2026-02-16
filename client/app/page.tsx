@@ -19,7 +19,7 @@ export default function Home() {
 
   // Fetch dinámico al backend
   useEffect(() => {
-    fetch('http://localhost:4000/api/productos')
+  fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/productos`)
       .then((res) => res.json())
       .then((data) => {
         setProductos(data);
