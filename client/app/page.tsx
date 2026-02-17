@@ -36,9 +36,15 @@ export default function Home() {
       {/* --- NAVBAR --- */}
       <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <span className="text-2xl font-serif font-bold text-orange-900">
-            Casa Mango
-          </span>
+          <div className="relative h-16 w-40 md:w-48 cursor-pointer flex items-center hover:scale-105 transition-transform duration-300">
+             <a href="#inicio" className="relative w-full h-full block">
+               <img 
+                 src="/logo.png" 
+                 alt="Casa Mango Logo"
+                 className="w-full h-full object-contain object-left"
+               />
+             </a>
+          </div>
           <div className="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest">
             <a href="#inicio" className="hover:text-orange-700 transition">
               Inicio
