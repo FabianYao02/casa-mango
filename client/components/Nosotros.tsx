@@ -35,8 +35,10 @@ export default function Nosotros() {
             </div>
           </div>
         </div>
-        <div className="relative">
+        <div className="relative ">
           <Image
+            width={600}
+            height={500}
             src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop"
             alt="Interior de la cafetería"
             className="rounded-2xl shadow-2xl object-cover"

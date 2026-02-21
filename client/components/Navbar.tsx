@@ -8,6 +8,8 @@ export default function Navbar() {
           <div className="relative h-16 w-40 md:w-48 cursor-pointer flex items-center hover:scale-105 transition-transform duration-300">
              <a href="#inicio" className="relative w-full h-full block">
                <Image 
+                 width={372}
+                 height={312}
                  src="/logo.png" 
                  alt="Casa Mango Logo"
                  className="w-full h-full object-contain object-center"

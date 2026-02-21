@@ -1,10 +1,9 @@
-// client/components/Menu.tsx
-'use client'; // Volvemos a poner el use client porque aquí está la lógica
+'use client'; 
 
 import React, { useState, useEffect } from "react";
 import { Producto } from "@/types";
 import { obtenerProductos } from "@/services/api";
-import TarjetaProducto from "./TarjetaProducto"; // Importamos tu mapeador
+import TarjetaProducto from "./TarjetaProducto"; 
 
 export default function Menu() {
   const [productos, setProductos] = useState<Producto[]>([]);
@@ -33,8 +32,13 @@ export default function Menu() {
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-900"></div>
           </div>
         ) : (
-          /* Aquí está la magia: le pasamos la lista al componente TarjetaProducto por medio de Props */
-          <TarjetaProducto productos={productos} />
+          /* AQUÍ MENU HACE LA CUADRÍCULA Y EL MAP */
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {productos.map((prod) => (
+              // Y llamamos a la tarjeta pasándole UN SOLO producto a la vez
+              <TarjetaProducto key={prod.id} producto={prod} />
+            ))}
+          </div>
         )}
 
       </div>

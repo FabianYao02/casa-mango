@@ -10,6 +10,8 @@ export default function Footer() {
                  <Image 
                    src="/logo.png" 
                    alt="Casa Mango Logo"
+                   width={372}
+                   height={312}
                    className="w-full h-full object-contain object-center"
                  />
             </div>

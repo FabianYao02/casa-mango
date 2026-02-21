@@ -1,4 +1,5 @@
 import {ChevronRight} from 'lucide-react'
+import Image from "next/image";
 
 export default function Hero() {
     return (
@@ -7,7 +8,9 @@ export default function Hero() {
         className="relative h-screen flex items-center justify-center overflow-hidden"
       >
         <div className="absolute inset-0 z-0">
-          <img
+          <Image
+            width={1000}
+            height={1000}
             src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop"
             alt="Café recién hecho"
             className="w-full h-full object-cover brightness-50"
