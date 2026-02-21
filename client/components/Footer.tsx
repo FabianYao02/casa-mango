@@ -1,4 +1,5 @@
 import { Instagram, Facebook } from "lucide-react";
+import Image from "next/image";
 export default function Footer() {
     return(
         
@@ -6,7 +7,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-stone-400 text-sm">
           <div className="text-center md:text-left">
             <div className="relative h-10 w-51 mx-auto md:mx-0 mb-4 opacity-50 hover:opacity-100 transition-opacity">
-                 <img 
+                 <Image 
                    src="/logo.png" 
                    alt="Casa Mango Logo"
                    className="w-full h-full object-contain object-center"

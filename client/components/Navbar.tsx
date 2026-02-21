@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Navbar() {
     return (
         <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
@@ -6,7 +7,7 @@ export default function Navbar() {
           {/* MODIFICACIÓN 1: LOGO EN NAVBAR */}
           <div className="relative h-16 w-40 md:w-48 cursor-pointer flex items-center hover:scale-105 transition-transform duration-300">
              <a href="#inicio" className="relative w-full h-full block">
-               <img 
+               <Image 
                  src="/logo.png" 
                  alt="Casa Mango Logo"
                  className="w-full h-full object-contain object-center"

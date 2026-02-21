@@ -1,7 +1,8 @@
 import { Coffee, Utensils } from "lucide-react";
+import Image from "next/image";
 export default function Nosotros() {
     return (
-        <section
+      <section
         id="nosotros"
         className="py-24 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center"
       >
@@ -35,10 +36,10 @@ export default function Nosotros() {
           </div>
         </div>
         <div className="relative">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop"
             alt="Interior de la cafetería"
-            className="rounded-2xl shadow-2xl"
+            className="rounded-2xl shadow-2xl object-cover"
           />
           <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg border border-stone-100 hidden md:block">
             <p className="text-3xl font-serif font-bold text-orange-900">
@@ -50,5 +51,5 @@ export default function Nosotros() {
           </div>
         </div>
       </section>
-    )
+    );
 }
