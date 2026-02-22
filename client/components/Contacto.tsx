@@ -41,7 +41,7 @@ export default function Contacto() {
 
           {/* Mapa (Placeholder) */}
           
-          <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-2xl border border-stone-200 min-h-[600px] relative">
+          <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-2xl border border-stone-200 min-h-150 relative">
             <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.4563297836194!2d-93.09037138839112!3d16.753957383962664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ed2783de846725%3A0xfa9e4f667517cc14!2sCasa%20Mango%20Caf%C3%A9!5e0!3m2!1ses-419!2smx!4v1771230588054!5m2!1ses-419!2smx" 
             width="100%" 
