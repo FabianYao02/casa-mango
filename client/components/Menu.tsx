@@ -1,6 +1,6 @@
 'use client'; 
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Producto } from "@/types";
 import { obtenerProductos } from "@/services/api";
 import TarjetaProducto from "./TarjetaProducto"; 
@@ -17,19 +17,26 @@ export default function Menu() {
   }, []);
 
   return (
-    <section id="menu" className="py-24 bg-stone-100">
+    <section id="menu" className="py-24 bg-cafe-100">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center mb-16">
-          <span className="text-orange-800 font-bold uppercase tracking-widest text-xs">Nuestra Carta</span>
-          <h2 className="text-4xl md:text-5xl font-serif text-stone-800 mt-3">Selección Especial</h2>
-          <div className="w-24 h-1 bg-orange-700 mx-auto mt-6 rounded-full opacity-20"></div>
+          <span className="text-mango-900 font-bold uppercase tracking-widest text-xs">Nuestra Carta</span>
+          <h2 className="text-4xl md:text-5xl font-serif text-cafe-800 mt-3">Selección Especial</h2>
+          <div className="w-24 h-1 bg-mango-700 mx-auto mt-6 rounded-full opacity-20"></div>
         </div>
 
         {/* LÓGICA DE CARGA Y RENDERIZADO */}
         {loading ? (
           <div className="flex justify-center py-20">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-900"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-mango-900"></div>
+          </div>
+        ) :productos.length === 0 ? (
+          /* NUEVO: ESTADO VACÍO */
+          <div className="text-center py-20">
+            <p className="text-xl text-cafe-600 font-serif">
+              Estamos preparando nuestro menú. ¡Vuelve pronto!
+            </p>
           </div>
         ) : (
           /* AQUÍ MENU HACE LA CUADRÍCULA Y EL MAP */
